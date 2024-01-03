@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def numberOfBeams(self, bank: List[str]) -> int:
         prev, ans = 0, 0
