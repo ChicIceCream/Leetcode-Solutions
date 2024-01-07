@@ -3,6 +3,8 @@
 # Note that the returned array may be in any order.
 # Uses simple for looping and if function
 
+from typing import List
+
 class Solution:
     def findWordsContaining(self, words: List[str], x: str) -> List[int]:
         result = []
