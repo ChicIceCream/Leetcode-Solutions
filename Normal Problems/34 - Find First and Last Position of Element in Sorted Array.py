@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         def binary_search_left(nums, target):
