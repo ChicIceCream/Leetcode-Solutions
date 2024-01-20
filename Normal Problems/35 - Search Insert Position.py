@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
         upper_bound, lower_bound = len(nums) - 1, 0
