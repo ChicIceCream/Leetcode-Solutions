@@ -34,7 +34,7 @@ class Solution:
         while left < right:
             mid = (left + right) // 2
 
-            if isBadVersion(mid):
+            if isBadVersion(mid): # type: ignore
                 right = mid
             else:
                 left = mid + 1
