@@ -18,3 +18,17 @@ class Solution:
                 stack_t.append(char)
         
         return stack_s == stack_t
+
+class Solution:
+    def backspaceCompare(self, s: str, t: str) -> bool:
+        def pro(s):
+            k = []
+            for c in s:
+                if c == '#':
+                    if k:
+                        k.pop()
+                else:
+                    k.append(c)
+            return ''.join(k)
+        
+        return pro(s) == pro(t)
