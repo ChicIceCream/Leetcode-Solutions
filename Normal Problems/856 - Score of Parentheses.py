@@ -1,19 +1,17 @@
+class Solution:
+    def scoreOfParentheses(self, s: str) -> int:
 
-def scoreOfParentheses(s: str) -> int:
+        stack = [0]
+        total = 0
 
-    stack = [0]
-    total = 0
+        for ch in s:
+            if ch == "(":
+                stack.append(0)
 
-    for ch in s:
-        if ch == "(":
-            stack.append(0)
+            else:
+                top = stack.pop()
+                val = max(1, 2 * top)
 
-        else:
-            top = stack.pop()
-            val = max(1,2*top)
+                stack[-1] += val
 
-            stack[-1] += val
-
-    return stack.pop()
-
-print(scoreOfParentheses(s = "(()(()))"))
+        return stack.pop()
