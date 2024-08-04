@@ -16,3 +16,4 @@ class Solution:
 
         return stack.pop()
 
+print(Solution.scoreOfParentheses(s="(()(()))"))
