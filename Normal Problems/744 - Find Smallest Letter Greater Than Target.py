@@ -1,5 +1,5 @@
 class Solution:
-    def nextGreatestLetter(self, letters: List[str], target: str) -> str:
+    def nextGreatestLetter(self, letters: List[str], target: str) -> str: #type: ignore
         left, right = 0, len(letters) - 1
 
         while left <= right:
