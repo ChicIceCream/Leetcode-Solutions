@@ -1,5 +1,3 @@
-
-
 class Solution:
     def numberOfArithmeticSlices(self, nums):
         n = len(nums)
