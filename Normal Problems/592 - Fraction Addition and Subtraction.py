@@ -12,4 +12,3 @@ class Solution:
                 result += Fraction(fraction)
         
         return f"{result.numerator}/{result.denominator}"
-        exit()
