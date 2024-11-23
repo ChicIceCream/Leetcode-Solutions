@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: List[int], target: int) -> List[int]: #type:ignore
         hashmap = {}
         for x in range(len(nums)):
             # x is the first number and y is the second number
