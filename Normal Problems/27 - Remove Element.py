@@ -7,3 +7,10 @@ class Solution:
             else:
                 i += 1
         return len(nums)
+
+###################################### Another Solution ############################################
+    # def removeElement(self, nums: List[int], val: int) -> int:
+#         
+#       nums[:] = [x for x in nums if x != val]
+
+#         return len(nums)
