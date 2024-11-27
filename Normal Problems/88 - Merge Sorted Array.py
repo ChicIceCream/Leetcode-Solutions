@@ -1,5 +1,5 @@
 class Solution:
-    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None: # type:ignore
         """
         Do not return anything, modify nums1 in-place instead.
         """
