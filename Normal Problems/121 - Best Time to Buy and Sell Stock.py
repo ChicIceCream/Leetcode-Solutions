@@ -20,7 +20,6 @@ class Solution:
 
 ########################################### Using Dunamic Programming ################################################
 
-
 # class Solution:
 #     def maxProfit(self, prices: List[int]) -> int:
 #         max_profit = 0  # Tracks the highest profit
