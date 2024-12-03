@@ -9,5 +9,3 @@ class Solution:
                 counter += 1
         
         return counter
-            
-        
