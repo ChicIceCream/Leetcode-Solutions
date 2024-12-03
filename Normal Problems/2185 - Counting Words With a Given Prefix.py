@@ -1,5 +1,5 @@
 class Solution:
-    def prefixCount(self, words: List[str], pref: str) -> int:
+    def prefixCount(self, words: List[str], pref: str) -> int: #type:ignore
         # set prefix length to iterate the word
         prefix_len = len(pref)
         counter = 0 
