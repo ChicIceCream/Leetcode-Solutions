@@ -1,5 +1,5 @@
 class Solution:
-    def addSpaces(self, s: str, spaces: List[int]) -> str:
+    def addSpaces(self, s: str, spaces: List[int]) -> str: #type:ignore
         final_list = []
         prev_index = 0 # to know where to start the indexing for each string
 
