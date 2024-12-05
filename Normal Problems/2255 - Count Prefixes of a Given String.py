@@ -1,5 +1,5 @@
 class Solution:
-    def countPrefixes(self, words: List[str], s: str) -> int:
+    def countPrefixes(self, words: List[str], s: str) -> int: # type: ignore
         counter = 0
         
         for prefix in words:
@@ -9,5 +9,3 @@ class Solution:
                 counter += 1
         
         return counter
-    
-    
