@@ -1,5 +1,5 @@
 class Solution:
-    def isArraySpecial(self, nums: List[int], queries: List[List[int]]) -> List[bool]:
+    def isArraySpecial(self, nums: List[int], queries: List[List[int]]) -> List[bool]: #type:ignore
         n = len(nums)
         prefix = [0] * n  # Prefix array to count special pairs
         result = []  # Result list
