@@ -20,3 +20,4 @@ class Solution:
             fast = get_next_number(get_next_number(fast))
 
         return slow == 1
+    
