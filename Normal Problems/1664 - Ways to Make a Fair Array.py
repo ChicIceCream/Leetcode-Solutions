@@ -1,5 +1,5 @@
 class Solution:
-    def waysToMakeFair(self, nums: List[int]) -> int:
+    def waysToMakeFair(self, nums: List[int]) -> int: #type:ignore
         total_even = sum(nums[::2])  # Total sum of elements at even indices
         total_odd = sum(nums[1::2])  # Total sum of elements at odd indices
         prefix_even = prefix_odd = 0  # Initialize prefix sums for even and odd indices
