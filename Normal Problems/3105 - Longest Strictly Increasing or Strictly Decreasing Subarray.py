@@ -1,5 +1,5 @@
 class Solution:
-    def longestMonotonicSubarray(self, nums: List[int]) -> int:
+    def longestMonotonicSubarray(self, nums: List[int]) -> int: # type: ignore
         maxi = 1
         current_streak = 1
         back_streak = 1
