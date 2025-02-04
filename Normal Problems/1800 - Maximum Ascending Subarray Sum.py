@@ -1,5 +1,5 @@
 class Solution:
-    def maxAscendingSum(self, nums: List[int]) -> int:
+    def maxAscendingSum(self, nums: List[int]) -> int: #type:ignore
 
         cur_streak = maxi = nums[0]
         for i in range(1, len(nums)):
