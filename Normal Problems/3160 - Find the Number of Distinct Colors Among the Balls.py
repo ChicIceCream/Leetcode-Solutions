@@ -16,4 +16,3 @@ class Solution:
             ans[i]=len(color)
             i+=1
         return ans
-        
