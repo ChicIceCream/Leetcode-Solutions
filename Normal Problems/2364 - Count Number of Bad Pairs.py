@@ -1,5 +1,5 @@
 class Solution:
-    def countBadPairs(self, nums: List[int]) -> int:
+    def countBadPairs(self, nums: List[int]) -> int: #type:ignore
         bad_pairs = 0
         diff_count = {}
 

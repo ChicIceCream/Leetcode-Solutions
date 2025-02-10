@@ -735,7 +735,7 @@
         "kind": 6,
         "importPath": "Normal Problems.2364 - Count Number of Bad Pairs",
         "description": "Normal Problems.2364 - Count Number of Bad Pairs",
-        "peekOfCode": "class Solution:\n    def countBadPairs(self, nums: List[int]) -> int:\n        bad_pairs = 0\n        diff_count = {}\n        for pos in range(len(nums)):\n            diff = pos - nums[pos]\n            # Count of previous positions with same difference\n            good_pairs_count = diff_count.get(diff, 0)\n            # Total possible pairs minus good pairs = bad pairs\n            bad_pairs += pos - good_pairs_count",
+        "peekOfCode": "class Solution:\n    def countBadPairs(self, nums: List[int]) -> int: #type:ignore\n        bad_pairs = 0\n        diff_count = {}\n        for pos in range(len(nums)):\n            diff = pos - nums[pos]\n            # Count of previous positions with same difference\n            good_pairs_count = diff_count.get(diff, 0)\n            # Total possible pairs minus good pairs = bad pairs\n            bad_pairs += pos - good_pairs_count",
         "detail": "Normal Problems.2364 - Count Number of Bad Pairs",
         "documentation": {}
     },
