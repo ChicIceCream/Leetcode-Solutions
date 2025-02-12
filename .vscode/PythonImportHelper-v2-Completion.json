@@ -735,6 +735,15 @@
         "kind": 6,
         "importPath": "Normal Problems.2342 - Max Sum of a Pair With Equal Sum of Digits",
         "description": "Normal Problems.2342 - Max Sum of a Pair With Equal Sum of Digits",
+        "peekOfCode": "class Solution:\n    def maximumSum(self, nums: List[int]) -> int:\n        max = -1\n        for i in range(len(nums)):\n            for j in range(len(nums)):\n                if sum(list(int(k) for k in str(nums[i]))) == sum(list(int(k) for k in str(nums[j]))) and i != j:\n                    #print(f\"i = {nums[i]}, j = {nums[j]}\")\n                    sum_num = nums[i] + nums[j]\n                    #print(sum_num, max)\n                    if max < sum_num:",
+        "detail": "Normal Problems.2342 - Max Sum of a Pair With Equal Sum of Digits",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "Normal Problems.2342 - Max Sum of a Pair With Equal Sum of Digits",
+        "description": "Normal Problems.2342 - Max Sum of a Pair With Equal Sum of Digits",
         "peekOfCode": "class Solution:\n    # Helper function to compute the sum of digits of a number\n    def calculate_digit_sum(self, num):\n        digit_sum = 0\n        while num > 0:\n            digit_sum += num % 10\n            num //= 10\n        return digit_sum\n    def maximumSum(self, nums):\n        digit_sum_pairs = []",
         "detail": "Normal Problems.2342 - Max Sum of a Pair With Equal Sum of Digits",
         "documentation": {}

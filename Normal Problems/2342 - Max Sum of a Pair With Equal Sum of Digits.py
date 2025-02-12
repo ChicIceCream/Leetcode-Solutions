@@ -1,6 +1,20 @@
+########################### Brute Forced (TLE) #################################
+class Solution:
+    def maximumSum(self, nums: List[int]) -> int:
+        max = -1
 
+        for i in range(len(nums)):
+            for j in range(len(nums)):
+                if sum(list(int(k) for k in str(nums[i]))) == sum(list(int(k) for k in str(nums[j]))) and i != j:
+                    #print(f"i = {nums[i]}, j = {nums[j]}")
+                    sum_num = nums[i] + nums[j]
+                    #print(sum_num, max)
+                    if max < sum_num:
+                        max = sum_num
+        
+        return max
 
-
+############################# Editorial ###################################
 class Solution:
     # Helper function to compute the sum of digits of a number
     def calculate_digit_sum(self, num):
