@@ -733,6 +733,15 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "Normal Problems.2342 - Max Sum of a Pair With Equal Sum of Digits",
+        "description": "Normal Problems.2342 - Max Sum of a Pair With Equal Sum of Digits",
+        "peekOfCode": "class Solution:\n    # Helper function to compute the sum of digits of a number\n    def calculate_digit_sum(self, num):\n        digit_sum = 0\n        while num > 0:\n            digit_sum += num % 10\n            num //= 10\n        return digit_sum\n    def maximumSum(self, nums):\n        digit_sum_pairs = []",
+        "detail": "Normal Problems.2342 - Max Sum of a Pair With Equal Sum of Digits",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "Normal Problems.2364 - Count Number of Bad Pairs",
         "description": "Normal Problems.2364 - Count Number of Bad Pairs",
         "peekOfCode": "class Solution:\n    def countBadPairs(self, nums: List[int]) -> int: #type:ignore\n        bad_pairs = 0\n        diff_count = {}\n        for pos in range(len(nums)):\n            diff = pos - nums[pos]\n            # Count of previous positions with same difference\n            good_pairs_count = diff_count.get(diff, 0)\n            # Total possible pairs minus good pairs = bad pairs\n            bad_pairs += pos - good_pairs_count",
