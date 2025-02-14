@@ -16,5 +16,4 @@ class ProductOfNumbers:
             return 0
         if len(self.list) == k:
             return self.list[-1]
-        return self.list[-1] // self.list[-k - 1]git add .
-    git commit -m 
+        return self.list[-1] // self.list[-k - 1]
